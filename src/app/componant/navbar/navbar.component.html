@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+    <!-- container for responsiveness -->
+    <div class="container-fluid">
+  
+      <!-- first item: brand name -->
+      <a class="navbar-brand" routerLink="/navbar">MyBrand</a>
+      <a class="navbar-brand" routerLink="/navbar/list">List data</a>
+  
+      <!-- this is the button when it collapses due to small screen size (data-bs-target must match the ID of the div below)-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- this div holds everything who is going to collapse inside the button (be careful with the ID. It must match with the button target) -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <!-- this list contains the "menu options (items)" such as download, contact, pricing, etc. -->
+        <ul id="my-ul" class="ms-auto navbar-nav">
+          
+          <!-- this is an item -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Download</a>
+          </li>
+          <!-- this is another item -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>          
+        
+        </ul>
+      
+      </div>
+    
+    </div>
+  
+  </nav>
+
+  <router-outlet>
+    
+  </router-outlet>
